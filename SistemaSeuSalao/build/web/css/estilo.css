@@ -1,0 +1,158 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22/09/2016, 20:41:25
+    Author     : vinicius
+*/
+@import url(https://fonts.googleapis.com/css?family=Proza+Libre);
+@import url("http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.5.4/bootstrap-select.min.css");
+
+body {
+    padding: 0;
+    margin: 0 0 1% 0;
+    background: #EEE;
+    font-family: 'Proza Libre', sans-serif;
+}
+
+/****************
+*    MASTERS    *
+*****************/
+
+/*TOP-BAR*/
+.top-menu {
+    width: 100%; height: 80px; position: fixed; top: 0; left: 0; z-index: 10; background: #666; 
+}
+.icons-menu {
+    width: 80px;
+    height: 80px;
+    margin: 20px 1% 0 0.5%;
+    float: right
+}
+
+/****************
+*      GERAL    *
+*****************/
+.telas-de-insercao {
+    width: 100%; height: 100%; padding: 0 15% 3% 15%;
+}
+.frente-de-caixa {
+    width: 100%; padding: 0 3% 0 3%;
+}
+.sub-top-menu { 
+    width: 100%; height: 50px; line-height: 50px; text-align: center; margin: 95px 0 0 0;
+}
+.sub-top-menu label{
+    font-size: 1.5em; vertical-align: middle;
+}
+.sub-top-menu a:hover, a:link, a:visited{
+    text-decoration: none;
+    color: #666;
+}
+
+
+
+/****************
+*     LOGIN     *
+*****************/
+.tela-login{
+    width: 80%;
+    height: 80%;
+    padding: 1%;
+    position: relative;
+    margin: 20% 32.5% 0 10%;
+}
+
+.login-logo{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.campos-login {
+    width: 100%;
+    height: 80%;
+}
+
+/****************
+CAD. FUNCIONARIO*
+*****************/
+.input-group ul {
+    list-style-type: none;
+    padding: 1%;
+}
+
+.input-group li {
+    margin: 2%;
+}
+
+/****************
+*  COMPONENTES  *
+*****************/
+
+.components-menu{
+    color: #fff;
+    margin-right: 5%;
+}
+
+.input-group {
+    margin: 2% 0 2% 0;
+    width: 100%;
+}
+
+.btn-default{
+    margin: 5% 0; width: 100%;
+}
+
+.desc-sub-top-menu{
+    margin: 0% 2% 0 2%;
+}
+
+/****************
+*      MENU     *
+*****************/
+
+/*MENU*/
+.menu { width: 100%; height: 100%; display: none; position: fixed; text-align: center; 
+       background-color: rgba(0,0,0,0.9); top: 0; left: 0; z-index: 10; }
+.menu a:hover{ text-decoration: none; color: #fff; font-size: 4em; }
+.logo-menu { width: 80px; height: 80px }
+.btn-menu { width: 80px; height: 80px; float: right; text-align: center; color: #fff; cursor: pointer; 
+           background: #666; border: none; }
+.btn-close { font-size: 3em; color: #fff; float: right; cursor: pointer; margin: 3% 3% 0 0; }
+.menu ul { width: 100%; float: left; text-align: center; list-style-type: none; }
+.menu li { padding: 2%; text-align: center; }
+.menu li a { font-size: 1.5em; color: #fff; padding: 1.5% 3%; }
+.menu li a:link, a:visited{ text-decoration: none; }
+.menu li a:hover{ text-decoration: none; font-size: 1.5em; }
+
+/****************
+*   RESPONSIVO  *
+*****************/
+
+@media screen and (min-width: 460px){
+    .telas-de-insercao { margin-top: 2%; }
+    .btn-default { margin-top: 1%; }   
+    .realizar-movimentacao { padding: 1.5%; }
+}
+
+@media screen and (min-width: 605px){
+    .input-group li { padding: 0; float: left;}
+}
+
+@media screen and (min-width: 768px){
+    .tela-login{ width: 40%!important; height: 40%!important; margin-top: 5%!important; margin-left: 32.5%!important; }
+}
+
+@media screen and (min-width: 1024px){
+    .btn-menu {display: none; }
+    .btn-close {display: none; }
+    .menu {display: block!important; height: 80px; top: 8px; line-height: 80px; float: right; background-color: transparent; }
+    .menu li {padding: 0; float: right; font-size: 1.5em; margin-left: 5%}
+    .menu li a {font-size: 1.0em; padding: 15px}
+    .menu li a:hover {font-size: 1.0em; padding: 15px}
+    .menu li a font {display: none;}
+    
+}
